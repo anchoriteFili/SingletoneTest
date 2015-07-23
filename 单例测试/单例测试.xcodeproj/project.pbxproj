@@ -15,6 +15,7 @@
 		C2DADB9F1B609588005F27C6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2DADB9D1B609588005F27C6 /* LaunchScreen.xib */; };
 		C2DADBAB1B609589005F27C6 /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DADBAA1B609589005F27C6 /* ____Tests.m */; };
 		C2DADBB61B6095FE005F27C6 /* Singletone.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DADBB51B6095FE005F27C6 /* Singletone.m */; };
+		C2DADBB91B6098D1005F27C6 /* BlockTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DADBB81B6098D1005F27C6 /* BlockTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		C2DADBAA1B609589005F27C6 /* ____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____Tests.m"; sourceTree = "<group>"; };
 		C2DADBB41B6095FE005F27C6 /* Singletone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singletone.h; sourceTree = "<group>"; };
 		C2DADBB51B6095FE005F27C6 /* Singletone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Singletone.m; sourceTree = "<group>"; };
+		C2DADBB71B6098D1005F27C6 /* BlockTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockTest.h; sourceTree = "<group>"; };
+		C2DADBB81B6098D1005F27C6 /* BlockTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				C2DADB961B609587005F27C6 /* ViewController.m */,
 				C2DADBB41B6095FE005F27C6 /* Singletone.h */,
 				C2DADBB51B6095FE005F27C6 /* Singletone.m */,
+				C2DADBB71B6098D1005F27C6 /* BlockTest.h */,
+				C2DADBB81B6098D1005F27C6 /* BlockTest.m */,
 				C2DADB981B609587005F27C6 /* Main.storyboard */,
 				C2DADB9B1B609588005F27C6 /* Images.xcassets */,
 				C2DADB9D1B609588005F27C6 /* LaunchScreen.xib */,
@@ -226,6 +231,7 @@
 			files = (
 				C2DADB971B609587005F27C6 /* ViewController.m in Sources */,
 				C2DADB941B609587005F27C6 /* AppDelegate.m in Sources */,
+				C2DADBB91B6098D1005F27C6 /* BlockTest.m in Sources */,
 				C2DADB911B609587005F27C6 /* main.m in Sources */,
 				C2DADBB61B6095FE005F27C6 /* Singletone.m in Sources */,
 			);
@@ -352,8 +358,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "单例测试/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -362,8 +370,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "单例测试/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

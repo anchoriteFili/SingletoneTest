@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "BlockTest.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    BlockTest *blockT = [[BlockTest alloc] init];
+    blockT.block = ^(NSInteger a) {
+        NSLog(@"%ld",(long)a);
+    };
+    
 }
 
 - (void)didReceiveMemoryWarning {
